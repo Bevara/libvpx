@@ -1,0 +1,14 @@
+{
+    "name": "libvpx",
+    "description": "VP8/VP9 video decoder",
+    "filters":["vpxdec"],
+    "help": "This filter decodes VP8/VP9 video elementary streams using libvpx. Pairs with a demuxer (e.g. webmdmx) providing framed VP8/VP9 coded frames.",
+    "support": [
+        "video"
+    ],
+    "sources":"https://bevara.ddns.net/sources/libvpx.accessor",
+    "filter_source":{
+        "vpxdec" : "dec_vpx.c"
+    },
+    "licence_required":false
+}
