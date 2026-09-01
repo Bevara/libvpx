@@ -230,7 +230,7 @@ GF_FilterRegister VPxDecoderRegister = {
 	.finalize = vpxdec_finalize,
 };
 
-const GF_FilterRegister * EMSCRIPTEN_KEEPALIVE dynCall_vpxdec_register(GF_FilterSession *session)
+const GF_FilterRegister * EMSCRIPTEN_KEEPALIVE vpxdec_register(GF_FilterSession *session)
 {
 	return &VPxDecoderRegister;
 }
@@ -238,5 +238,5 @@ const GF_FilterRegister * EMSCRIPTEN_KEEPALIVE dynCall_vpxdec_register(GF_Filter
 #include "filter_register.h"
 __attribute__((constructor))
 void register_vpxdec(void) {
-    gf_filter_auto_register("vpxdec", dynCall_vpxdec_register);
+    gf_filter_auto_register("vpxdec", vpxdec_register);
 }
