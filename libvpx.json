@@ -10,6 +10,10 @@
     "filter_source":{
         "vpxdec" : "dec_vpx.c"
     },
-    "licence_required":false,
-    "using": ["solver_minimal_1"]
+    "using": ["solver_minimal_1"],
+    "patents": {
+        "status": "under-review",
+        "note": "VP8/VP9: royalty-free grant from Google; Sisvel pool claims VP9 patents",
+        "checked": "2026-10-16"
+    }
 }
