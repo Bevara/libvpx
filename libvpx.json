@@ -1,18 +1,30 @@
 {
     "name": "libvpx",
     "version": "1.0.2",
-    "Format": ["VP8", "VP9"],
+    "Format": [
+        "VP8",
+        "VP9"
+    ],
     "description": "VP8/VP9 video decoder",
-    "filters":["vpxdec"],
+    "filters": [
+        "vpxdec"
+    ],
     "help": "This filter decodes VP8/VP9 video elementary streams using libvpx. Pairs with a demuxer (e.g. webmdmx) providing framed VP8/VP9 coded frames.",
     "support": [
         "video"
     ],
-    "sources":"https://bevara.ddns.net/sources/libvpx.accessor",
-    "filter_source":{
-        "vpxdec" : "dec_vpx.c"
+    "sources": "https://bevara.ddns.net/sources/libvpx.accessor",
+    "filter_source": {
+        "vpxdec": "dec_vpx.c"
     },
-    "using": ["mm_solver_minimal_1.0.1", "mm_solver_1.0.1", "mm_solver_1.0.2", "mm_solver_1.0.3", "mm_solver_1.0.4"],
+    "using": [
+        "mm_solver_minimal_1.0.1",
+        "mm_solver_1.0.1",
+        "mm_solver_1.0.2",
+        "mm_solver_1.0.3",
+        "mm_solver_1.0.4",
+        "mm_solver_1.0.5"
+    ],
     "patents": {
         "status": "under-review",
         "note": "VP8/VP9: royalty-free grant from Google; Sisvel pool claims VP9 patents",
